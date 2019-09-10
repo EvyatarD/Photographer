@@ -1,0 +1,13 @@
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(51, 51, 51,0.5);
+
+}
+
+#icon{ 
+    height: 80px;
+    width: 150px;
+}
