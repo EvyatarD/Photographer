@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImgServiceService } from '../../service/img-service.service' ;
 
-const imgs = ["..\assets\img\DJI_0393-4.jpg"];
 
 @Component({
   selector: 'app-gallery',
@@ -9,7 +9,8 @@ const imgs = ["..\assets\img\DJI_0393-4.jpg"];
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { 
+  constructor( private imgService : ImgServiceService) { 
+    
   }
 
   ngOnInit() {

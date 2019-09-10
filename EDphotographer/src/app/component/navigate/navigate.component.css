@@ -24,3 +24,15 @@ nav a.current-page {
 h3{
     color: white
 }
+.header{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#icon{ 
+    height: 80px;
+    width: 150px;
+}

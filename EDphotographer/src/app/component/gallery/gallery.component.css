@@ -1,20 +1,17 @@
 .row {
     display: flex;
     width: 80%;
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
     justify-content: space-around;
-    padding: 0 4px;
     margin: 0 auto;
 }
 
-.imgP {
-    width: 200px;
-    height: 300px;
-}
-
-.imgL {
-    width: 300px;
-    height: 200px;
+.smallImg {
+    width: 40%;
+    height: 40%;
+    padding: 10px 0px;
 }
 
 /* Create four equal columns that sits next to each other */
