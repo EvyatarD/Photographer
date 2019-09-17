@@ -7,11 +7,25 @@ import { ImgServiceService } from 'src/app/service/img-service.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor( private imgService : ImgServiceService) { 
+  currentImg: string;
+  i:number;
+  constructor(private imgService: ImgServiceService) {
+    this.i = 0;
+    this.currentImg = this.imgService.panorama[this.i];
   }
 
   ngOnInit() {
+    this.changePanorama();
+  }
+
+  changePanorama(){
+    let imgsNumbers = this.imgService.panorama.length;
+    setInterval( () =>{
+      if (this.i == imgsNumbers)
+      this.i=0;
+      this.currentImg = this.imgService.panorama[this.i];
+      this.i++;
+    }, 4000);
   }
 
 }

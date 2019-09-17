@@ -7,6 +7,7 @@ import { NavigateComponent } from './component/navigate/navigate.component';
 import { MainComponent } from './component/main/main.component';
 import { GalleryComponent } from './component/gallery/gallery.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { BigImgComponent } from './component/gallery/big-img/big-img.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactComponent } from './component/contact/contact.component';
     NavigateComponent,
     MainComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    BigImgComponent
   ],
   imports: [
     BrowserModule,

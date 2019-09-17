@@ -1,6 +1,7 @@
 <div id="container">
   <br>
-<div class="row">
-  <img  class="smallImg" [src]="img" *ngFor="let img of imgService.imgs">
-</div>
+  <app-big-img [imgsrc]="currentImg"></app-big-img>
+  <div class="row">
+    <img class="smallImg" [src]="img" *ngFor="let img of imgService.imgs" (click)="clickImg(img)">
+  </div>
 </div>

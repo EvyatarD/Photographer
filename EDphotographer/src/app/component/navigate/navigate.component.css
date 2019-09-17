@@ -1,3 +1,7 @@
+.container{
+position: sticky;
+}
+
 nav {
     display: flex;
     width: 100%;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImgServiceService } from '../../service/img-service.service' ;
+import { ImgServiceService } from '../../service/img-service.service';
 
 
 @Component({
@@ -8,12 +8,16 @@ import { ImgServiceService } from '../../service/img-service.service' ;
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-
-  constructor( private imgService : ImgServiceService) { 
-    
+  currentImg: string;
+  constructor(private imgService: ImgServiceService) {
   }
 
   ngOnInit() {
+  }
+
+  clickImg(src: string) {
+    this.currentImg = src;
+    this.imgService.clickImg();
   }
 
 }
