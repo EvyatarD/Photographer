@@ -1,3 +1,7 @@
+/* #container{
+
+} */
+
 .row {
     display: flex;
     width: 80%;
@@ -9,9 +13,15 @@
 }
 
 .smallImg {
-    width: 40%;
-    height: 40%;
+    width: 15rem;
+    height: 15rem;
     padding: 10px 0px;
+    border-radius: 50%;
+}
+
+.smallImg:hover{
+    opacity: 0.5;
+cursor: pointer;
 }
 
 /* Create four equal columns that sits next to each other */
