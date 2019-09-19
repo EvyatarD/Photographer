@@ -2,18 +2,18 @@
     background-color:rgba(182, 180, 180, 0.719);
     min-width: 100%;
     min-height: 100%; 
-    
+    overflow: scroll;
     position: absolute;
     z-index: 30;
     margin: 0 ;
 }
 
 img{
-    position: relative;
     display: block;
     size: 50%;
     max-width: 90%;
     margin: auto auto;
     padding: 20px;
+    z-index: 32;
 
 }
