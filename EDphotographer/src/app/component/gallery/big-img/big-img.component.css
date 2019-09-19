@@ -2,7 +2,6 @@
     background-color:rgba(182, 180, 180, 0.719);
     min-width: 100%;
     min-height: 100%; 
-    overflow: scroll;
     position: absolute;
     z-index: 30;
     margin: 0 ;
