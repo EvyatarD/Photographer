@@ -13,21 +13,36 @@
     height: 15rem;
     padding: 10px 0px;
     border-radius: 50%;
+    filter: brightness(0.8);
+    
 }
 
 
 .smallImg:hover {
-    opacity: 0.5;
+    filter: contrast(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.2);
     cursor: pointer;
 }
-
+/* 
+.smallImg {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.smallImg:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+} */
 
 @media only screen and (max-width: 800px) {
     .smallImg {
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
         border-radius: 0;
         padding: 10px 0px;
+        filter: brightness(1);
     }
 
     .smallImg:hover {
