@@ -1,5 +1,3 @@
-
-
 .row {
     display: flex;
     width: 80%;
@@ -17,21 +15,22 @@
     border-radius: 50%;
 }
 
-.smallImg:hover{
+
+.smallImg:hover {
     opacity: 0.5;
-cursor: pointer;
+    cursor: pointer;
 }
 
-/* Create four equal columns that sits next to each other */
 
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
+@media only screen and (max-width: 800px) {
+    .smallImg {
+        width: 95%;
+        height: 95%;
+        border-radius: 0;
+        padding: 10px 0px;
+    }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    .smallImg:hover {
+        opacity: 1;
+    }
 }

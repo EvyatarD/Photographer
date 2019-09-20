@@ -16,8 +16,10 @@ export class GalleryComponent implements OnInit {
   }
 
   clickImg(src: string) {
-    this.currentImg = src;
-    this.imgService.clickImg();
+    if (window.screen.width > 800) {
+      this.currentImg = src;
+      this.imgService.clickImg();
+    }
   }
 
 }

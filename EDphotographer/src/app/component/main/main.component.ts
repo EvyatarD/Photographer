@@ -9,13 +9,14 @@ import { ImgServiceService } from 'src/app/service/img-service.service';
 export class MainComponent implements OnInit {
   currentImg: string;
   i:number;
+
   constructor(private imgService: ImgServiceService) {
     this.i = 0;
     this.currentImg = this.imgService.panorama[this.i];
+    this.changePanorama();
   }
 
   ngOnInit() {
-    this.changePanorama();
   }
 
   changePanorama(){
@@ -25,7 +26,7 @@ export class MainComponent implements OnInit {
       this.i=0;
       this.currentImg = this.imgService.panorama[this.i];
       this.i++;
-    }, 4000);
+    }, 3000);
   }
 
 }
