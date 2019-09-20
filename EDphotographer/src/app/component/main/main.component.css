@@ -16,6 +16,11 @@ p {
     text-align: center;
 }
 
+.me{
+    background-color: rgba(114, 113, 113, 0.397);
+    padding: 10px;
+}
+
 footer {
     text-align: center;
     color: gray;
