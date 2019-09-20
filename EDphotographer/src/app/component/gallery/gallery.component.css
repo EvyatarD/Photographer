@@ -1,6 +1,6 @@
 .row {
     display: flex;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     padding: 0 0;
@@ -11,41 +11,29 @@
 .smallImg {
     width: 15rem;
     height: 15rem;
-    padding: 10px 0px;
+    padding: 12px 5px;
     border-radius: 50%;
     filter: brightness(0.8);
-    
 }
-
 
 .smallImg:hover {
     filter: contrast(1.2);
-    transform: scale(1.1);
+    transform: scale(1.01);
     -webkit-transform: scale(1.2);
     cursor: pointer;
 }
-/* 
-.smallImg {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.smallImg:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-} */
+
 
 @media only screen and (max-width: 800px) {
     .smallImg {
-        width: 100%;
+        width: 105%;
         height: 100%;
         border-radius: 0;
         padding: 10px 0px;
         filter: brightness(1);
     }
-
     .smallImg:hover {
-        opacity: 1;
+        filter: contrast(1);
+        transform: scale(1);
     }
 }
