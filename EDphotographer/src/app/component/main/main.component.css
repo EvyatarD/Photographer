@@ -5,6 +5,16 @@
     justify-content: center;
 }
 
+.elementor-background-video-container {
+    pointer-events: none;
+    hyphens: manual;
+}
+
+iframe{
+    width: 1460px;
+     height: 821.25px;
+}
+
 .panorama {
     width: 100%;
     height: 500px;
@@ -16,7 +26,7 @@ p {
     text-align: center;
 }
 
-.me{
+.me {
     background-color: rgba(114, 113, 113, 0.397);
     padding: 10px;
 }
@@ -28,19 +38,22 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    .panorama {
+    iframe{
+        width: 600px;
+         height: 400.25px;
+    }
+    /* .panorama {
         width: 100%;
         height: 190px;
-    }
+    } */
     p {
         font-size: 16px;
         direction: rtl;
         text-align: center;
     }
-
     footer {
         position: relative;
-        bottom:0;
+        bottom: 0;
         right: 0;
         text-align: center;
         color: gray;
@@ -48,10 +61,13 @@ footer {
     }
 }
 
-@media only screen and ( min-width: 600px ) and ( max-width: 800px ) {
-    .panorama {
+@media only screen and ( min-width: 600px) and ( max-width: 800px) {
+    /* .panorama {
         width: 100%;
         height: 270px;
-        
+    } */
+    iframe{
+        width: 640px;
+         height: 360.25px;
     }
 }
