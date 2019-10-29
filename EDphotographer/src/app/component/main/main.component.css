@@ -6,7 +6,7 @@
 }
 
 .elementor-background-video-container {
-    pointer-events: none;
+    /* pointer-events: none; */
     hyphens: manual;
 }
 
@@ -39,8 +39,8 @@ footer {
 
 @media only screen and (max-width: 600px) {
     iframe{
-        width: 600px;
-         height: 400.25px;
+        width: 360px;
+         height: 230.25px;
     }
     /* .panorama {
         width: 100%;
