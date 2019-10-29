@@ -6,7 +6,7 @@
 }
 
 .elementor-background-video-container {
-    pointer-events: none;
+    /* pointer-events: none; */
     hyphens: manual;
 }
 
