@@ -6,18 +6,13 @@
 }
 
 .elementor-background-video-container {
-    /* pointer-events: none; */
+    pointer-events: none;
     hyphens: manual;
 }
 
-iframe{
+iframe {
     width: 1460px;
-     height: 821.25px;
-}
-
-.panorama {
-    width: 100%;
-    height: 500px;
+    height: 821.25px;
 }
 
 p {
@@ -27,8 +22,11 @@ p {
 }
 
 .me {
-    background-color: rgba(114, 113, 113, 0.397);
-    padding: 10px;
+    background-color: rgba(114, 113, 113, 0.267);
+    padding:20px;
+}
+.subj{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -37,15 +35,69 @@ footer {
     font-size: 12px;
 }
 
+.contact {
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://lh3.googleusercontent.com/Eo9eezG_zGxK55Q-8KK7U1a2VS1Bkxwo-JmCY_zUOI6HOdKZJV1rpsdDyKvc4EuycxRv7S-w9vfhWFqnnQA6Jt97VvbuAnDnAHy09jIb4u3O4-sNa1XsVjpUNDW6UQNW4UyJisur6HjhVUHq36iydyRCFNJMct18Kryf6LSz-CjDDhJwOB654OQFV2i82U75lMkRdjUbABKmBiHjK7PReYIimKn1nQocpt-_62CEh1QmWIxLHyTpmESHz9o9gBNW2IOQMiJ-ifd07dTHAX0dUctS2jXPGENQijDn0XCivSp9WSsgUNA7Y3J7d6MJkQ0coQQwU_6-sy7wOKCGoFjy-NYS-ksNWSCLpNu4NX5lVS38NCpm3oel8cLqDeWCzFk8quXvRXNBzGtlM5BwqL2wguKAQ9lmIbx81a6WQ-dip8FACy-owsIeoJbRIS-e6eoXZFVQYLVu_TyOY5eKeE2aw0vtaoQmfPosl9h2yvW0jfSqy0cNAGRt7z17cIIf3EWMU7G9oewyQIxxFyw42w26CTV7hObrTU2y1JBt-_qZ5vh8fiOilc4nzZc6WaDvQZK3Lml9DbBBpzy3jQYrjmPLb2C8u-mWHRj6gB0332zExGo2VT3jerB8LpnhrG6077JyXlnwnJQrgG-BqY9e4Kgw9t_rXTJgr4P4eJ9aPeTgkA1pWyuu4Bw4U9uD-aOlFL31uNT194QgXcSz_RrIirkzZgecl6Eop3J6QCttbfnlnHQc4phE4A=w1112-h625-no);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    text-shadow: black 2px 1px;
+}
+
+.contact-header {
+    font-size: 65px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.evyaImg {
+    width: 15rem;
+    height: 15rem;
+    padding: 10px 0px;
+    border-radius: 50%;
+}
+
+#facebook {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    filter: brightness(166%);
+}
+
+#whatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
 @media only screen and (max-width: 600px) {
-    iframe{
-        width: 360px;
-         height: 230.25px;
+    iframe {
+        width: 350px;
+        height: 230.25px;
     }
-    /* .panorama {
-        width: 100%;
-        height: 190px;
-    } */
+
+    .elementor-background-video-container {
+        pointer-events: all;
+        hyphens: manual;
+    }
+
     p {
         font-size: 16px;
         direction: rtl;
@@ -59,15 +111,48 @@ footer {
         color: gray;
         font-size: 12px;
     }
+    ul {
+        display: inline-block;
+    }
+    .me {
+        font-size: 17px;
+    }
+
+    .contact-header {
+        font-size: 40px;
+    }
+
+    .contact {
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(https://lh3.googleusercontent.com/Eo9eezG_zGxK55Q-8KK7U1a2VS1Bkxwo-JmCY_zUOI6HOdKZJV1rpsdDyKvc4EuycxRv7S-w9vfhWFqnnQA6Jt97VvbuAnDnAHy09jIb4u3O4-sNa1XsVjpUNDW6UQNW4UyJisur6HjhVUHq36iydyRCFNJMct18Kryf6LSz-CjDDhJwOB654OQFV2i82U75lMkRdjUbABKmBiHjK7PReYIimKn1nQocpt-_62CEh1QmWIxLHyTpmESHz9o9gBNW2IOQMiJ-ifd07dTHAX0dUctS2jXPGENQijDn0XCivSp9WSsgUNA7Y3J7d6MJkQ0coQQwU_6-sy7wOKCGoFjy-NYS-ksNWSCLpNu4NX5lVS38NCpm3oel8cLqDeWCzFk8quXvRXNBzGtlM5BwqL2wguKAQ9lmIbx81a6WQ-dip8FACy-owsIeoJbRIS-e6eoXZFVQYLVu_TyOY5eKeE2aw0vtaoQmfPosl9h2yvW0jfSqy0cNAGRt7z17cIIf3EWMU7G9oewyQIxxFyw42w26CTV7hObrTU2y1JBt-_qZ5vh8fiOilc4nzZc6WaDvQZK3Lml9DbBBpzy3jQYrjmPLb2C8u-mWHRj6gB0332zExGo2VT3jerB8LpnhrG6077JyXlnwnJQrgG-BqY9e4Kgw9t_rXTJgr4P4eJ9aPeTgkA1pWyuu4Bw4U9uD-aOlFL31uNT194QgXcSz_RrIirkzZgecl6Eop3J6QCttbfnlnHQc4phE4A=w1112-h625-no);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        text-shadow: black 2px 1px;
+    }
+
+    .me img{width: 70%}
 }
 
 @media only screen and ( min-width: 600px) and ( max-width: 800px) {
-    /* .panorama {
-        width: 100%;
-        height: 270px;
-    } */
-    iframe{
+    .elementor-background-video-container {
+        pointer-events: all;
+        hyphens: manual;
+    }
+    iframe {
         width: 640px;
-         height: 360.25px;
+        height: 360.25px;
+    }
+
+    ul {
+        display: inline-block;
+    }
+    .me {
+        font-size: 17px;
+    }
+    .contact-header {
+        font-size: 40px;
     }
 }

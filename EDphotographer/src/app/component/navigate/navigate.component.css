@@ -2,7 +2,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: rgba(119, 118, 118, 0.404);
+    background-color: rgba(0, 0, 0, 0.404);
 }
 
 nav a {
@@ -24,12 +24,13 @@ nav a.current-page {
 }
 
 h3 {
-    color: white
+    color: white;
+    font-size: 25px;
 }
 
 .header {
     position: absolute;
-    margin: 5px 5px;
+    /* margin: 5px 5px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -58,6 +59,7 @@ h3 {
     to {
         transform: rotateY(360deg);
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -68,6 +70,10 @@ h3 {
         height: 46px;
         width: 64px;
     }
+    
+    h3 {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -77,5 +83,9 @@ h3 {
     #icon {
         height: 48px;
         width: 80px;
+    }
+    
+    h3 {
+        font-size: 17px;
     }
 }
