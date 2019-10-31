@@ -11,8 +11,9 @@
 }
 
 iframe {
-    width: 1460px;
+    width: 1390px;
     height: 821.25px;
+    max-width: none;
 }
 
 p {
