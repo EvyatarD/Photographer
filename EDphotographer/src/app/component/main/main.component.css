@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    margin: 0 auto;
+    
     display: flex;
     justify-content: center;
 }
@@ -8,6 +8,7 @@
 .elementor-background-video-container {
     pointer-events: none;
     hyphens: manual;
+    margin: -55px auto;
 }
 
 iframe {
@@ -28,6 +29,7 @@ p {
 }
 .subj{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 
 footer {
@@ -69,8 +71,8 @@ ul li {
 }
 
 .evyaImg {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     padding: 10px 0px;
     border-radius: 50%;
 }
@@ -97,7 +99,17 @@ ul li {
     .elementor-background-video-container {
         pointer-events: all;
         hyphens: manual;
+        margin: 50px auto;
+
     }
+
+    .subj{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: -50px auto;
+
+    }
+   
 
     p {
         font-size: 16px;
@@ -121,6 +133,12 @@ ul li {
 
     .contact-header {
         font-size: 40px;
+    }
+
+    .about{
+            margin: 0 auto;
+            text-align: center;
+            width: 80%;
     }
 
     .contact {
